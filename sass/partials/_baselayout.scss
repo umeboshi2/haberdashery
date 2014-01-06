@@ -68,34 +68,9 @@ li.top-bar-button {
     }
 }
 
+
 .main-menu {
     @extend .navbar-default;
-    //position: fixed;
-    //z-index: 100;
-    //top: 10px;
-    height: 4em;
-    margin-bottom: 0.1em;
-    background: $top-bar-background-color;
-    //color: lighten($top-bar-text-color, 20%);
-    padding: 0.15em;
-    @include border-radius(0.5em);
-    font-weight: bold;
-    font-family: "Rambla";
-    border-style: solid;
-    border-color: $basecolor2;
-    a.navbar-brand {
-	//background-image: linear-gradient(to bottom,$basecolor2 0,darken($basecolor2, 30%) 100%);
-	color: $basecolor1;
-	padding-left: 0.1em;
-	padding-right: 0.1em;
-	@include border-radius(0.5em);
-	
-    }
-    a.navbar-brand:hover {
-	//background-image: linear-gradient(to bottom,darken($basecolor2, 30%) 0, $basecolor2 100%);
-	border-style: solid;
-	border-color: $basecolor2;
-    }
     .dropdown-menu {
 	background: $top-bar-background-color;
 	li > a:hover {

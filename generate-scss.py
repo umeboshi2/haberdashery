@@ -10,6 +10,7 @@ bootstrap_template = """\
 @import "partials/basecolors/%(basecolor)s";
 @import "partials/bootstrap-variables";
 @import "partials/bootstrap-custom";
+@import "partials/bootstrap-widgets";
 """
 
 screen_template = """\
