@@ -50,6 +50,8 @@ sass/*.scss
 haberdashery/components
 haberdashery/apps
 haberdashery/stylesheets/*.css
+haberdashery/stylesheets/fonts
+
 
 # node/bower dev stuff
 node_modules
