@@ -18,6 +18,17 @@ $navbar-brand-color: $basecolor2;
 
 $input-color-placeholder: darken($basecolor3, 20);
 
+/*
+$dropdown-header-color: $basecolor1;
+$dropdown-caret-color: $basecolor1;
+$dropdown-link-color: $basecolor1;
+
+$navbar-default-color: $basecolor1;
+*/
+
+$navbar-default-link-color: $basecolor1;
+
+
 .navbar-default .navbar {
     margin-bottom: 1em;
 }
@@ -34,6 +45,4 @@ header.header > h2 {
     font-family: "Rambla";
 }
 
-.mainbar-main-menu {
 
-}
