@@ -29,19 +29,19 @@ define (require, exports, module) ->
     ########################################
     # Templates
     ########################################
-    make_menu = renderable (lbl, entries) ->
-      ul '.ctx-menu.nav.navbar-nav', ->
+    make_menu = renderable (model) ->
+      cls = '.' + model.tagclass + '.ctx-menu.nav.navbar.navbar-nav'
+      ul cls, ->
         li '.dropdown', ->
           a '.dropdown-toggle', 'data-toggle':'dropdown', ->
-            text lbl
+            text model.label
             b '.caret'
           ul '.dropdown-menu', ->
-            for entry in entries
+            for entry in model.entries
               li ->
                 a href:entry.url, entry.name
-            
     module.exports =
-      make_menu = make_menu
+      make_menu: make_menu
       
     
     

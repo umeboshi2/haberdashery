@@ -40,17 +40,12 @@ require.config
       deps: ['jquery']
     bsModal:
       deps: ['jquery']
-            
+  
 requirements = [
   'application'
   'simplerss'
   ]
   
-
-#App = require 'application'
-
-#window.app = App
-#App.start()
 
 require requirements, (App) ->
     window.app = App

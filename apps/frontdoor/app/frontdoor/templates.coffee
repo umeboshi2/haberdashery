@@ -61,37 +61,6 @@ define (require, exports, module) ->
   ##################################################################
   # ##########################
   ##################################################################    
-  rss_feed_entry = renderable (feed) ->
-    div '.listview-list-entry', ->
-      a href:'#showfeed/' + feed.id, feed.name
-
-  rss_feed_entry_empty = renderable (feed) ->
-    div '.listview-list-entry', ->
-      text 'EmptyView'
-
-  rss_feed_list = renderable (header) ->
-    div '.listview-header', "RSS Feeds"
-    div '.rss-feedlist.listview-list'
-
-  sidebarold = renderable () ->
-    div '.btn-group-vertical', ->
-      div '.btn.btn-default.simplerss-button', 'RSS'
-
-  sidebar2 = renderable () ->
-    ul '.menu-list', ->
-      li '.btn.btn-default', ->
-        a href:'#', 'RSS List'
-        
-  sidebar = renderable () ->
-    div '.listview-header', ->
-      div ->
-        a href:'#', 'RSS List'
-        
-  sbutton = renderable (model) ->
-    btnclass = '.btn.btn-default.' + model.bclass
-    div btnclass, ->
-      text model.name
-
   viewfeed = renderable (data) ->
     div '.listview-header', data.feed.name
     div '.listview-list', ->
@@ -103,13 +72,10 @@ define (require, exports, module) ->
           div ->
             teacup.raw entry.summary
             
-      
+  layout = renderable () ->
+    div '.something-very-special'
+    
+          
   module.exports =
     layout: layout
-    rss_feed_entry: rss_feed_entry
-    rss_feed_entry_empty: rss_feed_entry_empty
-    rss_feed_list: rss_feed_list
-    sidebar: sidebar
-    button: sbutton
-    viewfeed: viewfeed
     

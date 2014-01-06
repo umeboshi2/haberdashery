@@ -8,7 +8,7 @@ define (require, exports, module) ->
 
     render_page = (user, pagemodel) ->
         body = $ 'body'
-        body.html template user
+        body.html template.PageLayoutTemplate user
         $('#main-menu').html main_menu()
         header = $ '#header'
         header.text(pagemodel.header ? 'header')

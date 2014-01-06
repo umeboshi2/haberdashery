@@ -18,8 +18,11 @@ define (require, exports, module) ->
     app.addRegions
       mainbar: '#mainbar'
       content: '#content'
-      main_menu: '#main-menu'
-      user_menu: '#user-menu'
+      header: '#header'
+      subheader: '#subheader'
+      footer: '#footer'
+      
+      
       sidebar: '.sidebar'
       rcontent: '.right-column-content'
       
