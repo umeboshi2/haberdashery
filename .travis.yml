@@ -3,7 +3,22 @@ language: python
 #install:
 #  - pip install . --use-mirrors
 #  - pip install -r requirements.txt --use-mirrors
-
+before_install:
+  - gem install compass
+  - gem install susy
+  - gem install sassy-buttons
+  - gem install bootstrap-sass
+  - gem install compass-ui
+  - python generate-scss.py
+  - compass compile
+  - sudo npm install -g coffee-script
+  - sudo npm install -g grunt-cli
+  - sudo npm install -g bower
+  - npm install
+  - bower install
+  - python get-google-fonts.py
+  - python prepare-bower-components.py
+  - grunt
 install:
   - python setup.py install
 script:
