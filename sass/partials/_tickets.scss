@@ -1,0 +1,61 @@
+
+/*-------- Ticket Management ----------*/
+//@import "partials/action-button";
+
+.ticket-header {
+    background: $menu-header-bg-color;
+    color: $menu-header-text-color;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.ticket-update-ticket {
+    @include action-button;
+}
+
+
+
+.ticket-status-entry {
+    background: $basecolor4;
+    margin: 0.1em;
+    border-bottom-style: dashed;
+    border-bottom-width: 0.1em;
+    border-bottom-color: $basecolor2;
+}
+
+
+.ticket-status-entry-changedate {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.ticket-status-entry-reason {
+    font-size: 0.8em;
+}
+
+
+/*-------- Ticket List ----------*/
+
+.tickets-list-header {
+    background: $menu-header-bg-color;
+    color: $menu-header-text-color;
+    text-align: center;
+    font-size: 1.5em;
+}
+.tickets-list-list {
+    background: $basecolor4;
+    padding: 0.3em;
+}
+.tickets-list-entry {
+    background: $basecolor4;
+    margin: 0.5em;
+    border-style: solid;
+    border-width: 0.1em;
+    border-color: $basecolor2;
+    padding: 0.3em;
+}
+.tickets-list-entry-status {
+    float: right;
+}
+.tickets-list-entry-content {
+}

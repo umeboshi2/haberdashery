@@ -1,0 +1,21 @@
+/* -------------------------------------------------------*/
+/* @import "basecolors" needs to be done in parent script before
+ importing this script*/
+/* -----------------------------------------------------------
+/* Page Colors */
+
+$html-background-color: $basecolor3;
+
+$page-background-color: $html-background-color;
+$page-text-color: $color-gray13;
+$page-anchor-color: $basecolor;
+
+$top-bar-background-color: $basecolor4;
+$top-bar-text-color: $basecolor;
+$menu-header-bg-color: $top-bar-background-color;
+$menu-header-text-color: $top-bar-text-color;
+$menu-background-color: $page-background-color;
+$menu-text-color: $page-text-color;
+$sidebar-menu-hover-color: $basecolor2;
+/* -------------------------------------------------------*/
+

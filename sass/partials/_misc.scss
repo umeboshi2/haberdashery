@@ -1,0 +1,68 @@
+// ---------------------------------------------------------------------------
+.fc-header-title h2 {
+    font-size: 1.2em;
+}
+
+
+
+#list-button {
+    display: block;
+    text-align: center;
+}
+
+.ticket-main-view-button-sidebar {
+    .query-button {
+	display: block;
+	text-align: center;
+    }
+}
+
+#confirm-delete {
+    display: none;
+}
+
+
+.no-close .ui-dialog-titlebar-close {
+    display: none;
+}
+
+
+.add-entry-btnOrig {
+    margin-top: 0.1em;
+    margin-right: 0.075em;
+}
+
+#main-alert {
+	background-color: $basecolor4;
+	color: $basecolor;
+}
+
+#editor {
+    position: relative;
+    width: 100%;
+    height: 80em;
+}
+
+#field-editor {
+    position: relative;
+    width: 100%;
+    height: 80em;
+}
+
+
+
+.small-header {
+    @include border-radius(0.5em);
+    background: $menu-header-bg-color;
+    color: $menu-header-text-color;
+    text-align: center;
+    font-size: 1em;
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: $basecolor2;
+}
+
+
+.menu-list {
+    @include no-bullets;
+}

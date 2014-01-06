@@ -1,0 +1,28 @@
+
+#newevent-container {
+    font-size: 1em;
+}
+
+#newevent {
+    background: $basecolor2;
+    input {
+	font-size: 0.8em;
+	background: $basecolor2;
+    }
+}
+
+#newevent:hover {
+    cursor: move;
+}
+
+
+#action-button-submit {
+    background: $basecolor2;
+    text-align: center;
+}
+
+#action-button-submit:hover {
+    background: $basecolor1;
+    cursor: pointer;
+}
+

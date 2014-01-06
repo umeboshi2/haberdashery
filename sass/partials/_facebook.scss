@@ -1,0 +1,16 @@
+/*-------- facebook ----------*/
+.facebook-friends-entry {
+    font-size: 0.6em;
+    @include span-columns(2);
+    @inclode omega;
+
+    margin: 0.2em;
+    border-width: 1px;
+    border-color: $color-cornsilk4;
+    border-style: solid;
+    img {
+	float: right;
+    }
+    
+}
+

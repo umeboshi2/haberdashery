@@ -1,0 +1,55 @@
+{
+  "name": "haberdashery",
+  "version": "0.0.0",
+  "homepage": "https://github.com/umeboshi2/haberdashery",
+  "authors": [
+    "Joseph Rawson <joseph.rawson.works@littledebian.org>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "resolutions": {
+    "jquery": "2.0.3",
+    "backbone": "1.x",
+    "jquery-ui": "1.10.x"
+  },
+  "dependencies": {
+    "ace": "~1.1.1",
+    "jquery": "~2.0.3",
+    "jquery-ui": "~1.10.3",
+    "underscore": "~1.5.2",
+    "requirejs": "~2.1.9",
+    "bootstrap": "~3.0.3",
+    "create": "*",
+    "jquery-file-upload": "~9.5.2",
+    "font-awesome": "~4.0.3",
+    "coffee-script": "~1.6.3",
+    "fullcalendar": "~1.6.4",
+    "leaflet": "~0.7.1",
+    "masonry": "~3.1.4",
+    "fine-uploader": "~4.1.1",
+    "chartjs": "*",
+    "videojs": "~4.3.0",
+    "momentjs": "~2.5.0",
+    "chaplin": "~0.12.0",
+    "ace-builds": "~1.1.1",
+    "marionette": "~1.4.1",
+    "underscore-amd": "~1.5.2",
+    "backbone-amd": "~1.1.0",
+    "backbone.wreqr": "~0.2.0",
+    "backbone.babysitter": "~0.0.6",
+    "r.js": "~2.1.9",
+    "requirejs-text": "~2.0.10",
+    "require-cs": "https://github.com/requirejs/require-cs",
+    "bower-tinymce-amd": "https://github.com/thomaswelton/bower-tinymce-amd",
+    "modernizr": "~2.7.1",
+    "jqueryui-timepicker-addon": "~1.4.3",
+    "tag-it": "*"
+  }
+}

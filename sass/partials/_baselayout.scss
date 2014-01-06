@@ -1,0 +1,178 @@
+/* -------------------------------------------------------*/
+/* @import "page-colors" needs to be done in parent script before
+ importing this script*/
+/* ---------------------------------------------------------------------------
+// Imports */
+
+
+@import "partials/base";
+@import "partials/fonts";
+@import "partials/page-colors";
+
+@import "sassybuttons";
+
+// Import compass/typography for horizontal menu
+@import "compass/typography/lists/horizontal-list";
+@import "compass/typography/links/unstyled-link";
+@import "compass/css3/background-size";
+@import "compass/css3/border-radius";
+
+/* -------------------------------------------------------*/
+
+/* Layout */
+
+html {
+   background: $html-background-color;
+}
+
+.page {
+    @include container($total-columns, $tablet, $computer);
+    //@include susy-grid-background;
+    background: $page-background-color;
+    font-family: "Source Sans Pro",sans;
+    //@include unstyled-link;
+    //@include no-bullets;
+    color: $page-text-color;
+    a {
+	text-decoration: none;
+	color: $page-anchor-color;
+    }
+    a:link {
+	text-decoration: none;
+    }
+    a:visited {
+	text-decoration: none;
+    }
+}
+
+
+
+li.top-bar-button {
+    color: red;
+}
+
+.navbar-default .navbar-nav {
+    li {
+	a {
+	    color: $basecolor1;
+	}
+	a:hover {
+	    color: lighten($basecolor1, 20%);
+	    background: $basecolor2;
+	    border-style: solid;
+	    border-width: 0.1em;
+	    @include border-radius(0.5em);
+	    
+	}
+
+    }
+}
+
+.main-menu {
+    @extend .navbar-default;
+    //position: fixed;
+    //z-index: 100;
+    //top: 10px;
+    height: 4em;
+    margin-bottom: 0.1em;
+    background: $top-bar-background-color;
+    //color: lighten($top-bar-text-color, 20%);
+    padding: 0.15em;
+    @include border-radius(0.5em);
+    font-weight: bold;
+    font-family: "Rambla";
+    border-style: solid;
+    border-color: $basecolor2;
+    a.navbar-brand {
+	//background-image: linear-gradient(to bottom,$basecolor2 0,darken($basecolor2, 30%) 100%);
+	color: $basecolor1;
+	padding-left: 0.1em;
+	padding-right: 0.1em;
+	@include border-radius(0.5em);
+	
+    }
+    a.navbar-brand:hover {
+	//background-image: linear-gradient(to bottom,darken($basecolor2, 30%) 0, $basecolor2 100%);
+	border-style: solid;
+	border-color: $basecolor2;
+    }
+    .dropdown-menu {
+	background: $top-bar-background-color;
+	li > a:hover {
+	    background-image: linear-gradient(to bottom,$basecolor2 0,$basecolor3 100%);
+	}
+    }
+}
+
+.main-content {
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+
+.content {
+    background: $page-background-color;
+    margin-bottom: 5em;
+}
+
+.two-col {
+    @include span-columns($total-columns);
+}
+
+.right-column-content {
+    @include span-columns(3 * $total-columns / 4, $total-columns);
+    @include omega;
+    background: $page-background-color;
+    margin-bottom: 5em;
+}
+
+.sidebarOrig {
+    /*@include background-size('cover');*/
+    a {
+	color: $page-text-color;
+    }
+    @include span-columns($total-columns / 4, $total-columns);
+    float:left;
+
+    font-family: "Nunito";
+    font-size: 1.1em;
+    background: $top-bar-background-color;
+    text-align: left;
+    @include border-bottom-radius(0.5em);
+    a:hover {
+	background: $sidebar-menu-hover-color;
+	border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+    }
+    .left-menu-header {
+	font-family: "Rambla";
+	font-size: 1.5em;
+	background: $menu-header-bg-color;
+	color: $menu-header-text-color;
+    }
+    .left-menu {
+	margin-left: 0.5em;
+    }
+    #sidebar-logout{
+	margin-left: 0.5em;
+    }
+}
+
+.sidebar {
+    /*@include background-size('cover');*/
+    a {
+	color: $page-text-color;
+    }
+    @include span-columns($total-columns / 4, $total-columns);
+    float:left;
+
+    font-family: "Nunito";
+    font-size: 1.1em;
+}
+
+.footer {
+    @include span-columns($total-columns);
+    @include omega;
+    font-size: 1.2em;
+    padding-bottom: 3em;
+}

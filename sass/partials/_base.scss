@@ -1,0 +1,27 @@
+// ---------------------------------------------------------------------------
+// Imports
+
+@import "susy";
+// ---------------------------------------------------------------------------
+// Basic Grid
+
+//$total-columns  : 12;
+//$column-width   : 4em;
+//$gutter-width   : 1em;
+//$grid-padding   : $gutter-width;
+
+// Basic Grid
+
+$total-columns  : 12;
+$column-width   : 6em;
+$gutter-width   : 1em;
+$grid-padding   : 2 * $gutter-width;
+
+$tablet: 8;
+$computer: 8em 12;
+
+
+
+
+$show-grid-backgrounds  : true;
+

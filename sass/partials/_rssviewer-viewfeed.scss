@@ -1,0 +1,22 @@
+/* -------------------------------------------------------*/
+/* 
+      RSS Viewfeed Entries 
+*/
+/* -------------------------------------------------------*/
+
+.rssviewer-viewfeed-header {
+    background: $menu-header-bg-color;
+    color: $menu-header-text-color;
+    text-align: center;
+    font-size: 1.5em;
+}
+.rssviewer-viewfeed-entry {
+    background: lighten($basecolor3, 5);
+    a {
+	color: lighten($menu-header-text-color, 15);
+    }
+}
+.rssviewer-viewfeed-entry-content {
+    font-size: 0.8em;
+}
+

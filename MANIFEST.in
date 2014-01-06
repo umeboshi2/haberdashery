@@ -1,0 +1,10 @@
+# keeping stylesheets the same
+recursive-include haberdashery/stylesheets *
+
+recursive-include haberdashery/components *
+recursive-include haberdashery/apps *
+
+
+# components replace most of this
+recursive-include haberdashery/stdlib *
+

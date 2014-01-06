@@ -1,0 +1,40 @@
+/*-------- User Management ----------*/
+
+.userlist-header {
+    background: $menu-header-bg-color;
+    color: $menu-header-text-color;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.userlist-entry {
+    text-align: center;
+    background: $basecolor4;
+    display: inline-block;
+    position: relative;
+    margin: 0.5em;
+}
+
+.userlist-entry-name {
+    @include border-radius(0.2em);
+    font-family: "Questrial";
+    font-size: 0.8em;
+    background: lighten($basecolor4, 5);
+    padding: 0.2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin: 0.1em;
+}
+
+
+.userlist-delete-user {
+    @include action-button;
+     a {
+	text-decoration: none;
+	color: $top-bar-text-color;
+     }
+}
+
+.delete-user-button {
+    @include action-button;
+}
