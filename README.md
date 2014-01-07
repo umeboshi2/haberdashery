@@ -31,6 +31,12 @@ Setup
 Setup Compass
 ----------------
 
+Make sure rubygems is on your system:
+```sh
+sudo apt-get install rubygems
+```
+
+
 Setup local gem environment:
 
 ```sh
@@ -55,7 +61,7 @@ gem install bootstrap-sass
 gem install compass-ui
 ```
 
-Prepare and compile css
+In the haberdashery directory, prepare and compile css:
 
 ```sh
 python generate-scss.py
@@ -74,7 +80,10 @@ the build scripts in this repository:
 
 https://github.com/mark-webster/node-debian
 
-Then install these packages globally:
+Follow the instructions to build the debian package, 
+then install it.
+
+Then, install these packages globally:
 
 ```sh
 sudo npm install -g coffee-script
@@ -94,7 +103,7 @@ npm install
 Then install the bower packages:
 
 ```sh
-npm install
+bower install
 ```
 
 Bower packages can contain whole git repositories, which can 
@@ -107,7 +116,31 @@ bower package that points to a single file, or list of files very well.
 ```sh
 python prepare-bower-components.py
 ```
+
+Next, we need some google fonts.  We need the requests package 
+for python to run the next script.  Either install it system wide:
+
+```sh
+sudo apt-get install python-requests
+```
+
+or install it into your virtualenv:
+
+```sh
+pip install requests
+```
+
  
+Then download the fonts from google by running a python 
+script:
+
+```sh
+python get-google-fonts.py
+```
+
+This will install the fonts in the haberdashery package 
+directory.
+
 
 run grunt
 
