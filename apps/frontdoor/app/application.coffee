@@ -47,6 +47,11 @@ define (require, exports, module) ->
   app.current_user = new common_models.CurrentUser
   response = app.current_user.fetch()
 
+  MSGBUS.reqres.setHandler 'current:user', ->
+    app.current_user
+    
+    
+
   # we prepare the app after we fetch
   # the current user, then we assign
   # app.ready to true (I should use msgbus

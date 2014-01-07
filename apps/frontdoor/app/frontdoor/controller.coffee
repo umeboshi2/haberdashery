@@ -39,9 +39,11 @@ define (require, exports, module) ->
           model: MainMenuModel
         mainmenu.render()
         # FIXME: get current user from MSGBUS
+        user = MSGBUS.reqres.request 'current:user'
+        
         usermenu = new Views.UserMenuView
           el: '#user-menu'
-          model: new Backbone.Model username: 'hello'
+          model: user
         usermenu.render()
         
           
