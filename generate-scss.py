@@ -51,7 +51,11 @@ def generate_all_scss(basecolors):
         for name, template in TEMPLATES.items():
             generate_scss(basecolor, name, template)
 
-
+    # prepare font-awesome
+    with file('sass/font-awesome.scss', 'w') as o:
+        o.write('@import "partials/fontawesome/font-awesome";\n')
+        
+            
 if __name__ == '__main__':
     generate_all_scss(BASECOLORS)
     
