@@ -6,6 +6,8 @@ define (require, exports, module) ->
 
   Views = require 'views/mainviews'
 
+  FDViews = require 'frontdoor/views'
+  
   main_menu_data =
     tagclass: 'main-menu'
     label: 'Main'
@@ -38,18 +40,30 @@ define (require, exports, module) ->
           el: '#main-menu'
           model: MainMenuModel
         mainmenu.render()
-        # FIXME: get current user from MSGBUS
+        
         user = MSGBUS.reqres.request 'current:user'
         
         usermenu = new Views.UserMenuView
           el: '#user-menu'
           model: user
         usermenu.render()
+
         
+        # FIXME
+        show_login_form = false
+        if ! user.has('username')
+          view = new FDViews.LoginView
+            el: '.right-column-content'
+          show_login_form = true
+          view.render()
           
       MSGBUS.events.trigger 'mainpage:show', layout
       
-      #MSGBUS.events.trigger 'mainbar:show', layout
+      #if ! user.has('username')
+      #  view = new FDViews.LoginView
+      #    el: '.right-column-content'
+      #  MSGBUS.events.trigger 'rcontent:show', layout      
+
       
 
   module.exports = Controller

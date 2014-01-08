@@ -68,10 +68,9 @@ define (require, exports, module) ->
       'data-target':'#mainbar-collapse', ->
         span '.sr-only', 'Toggle navigations'
         span 'badge', 'expand'
-      a '.navbar-brand', href:'/', 'replaceme'
     div '#mainbar-collapse.collapse.navbar-collapse', ->
-      div '#main-menu.nav.navbar-nav.navbar-left'
-      div '#user-menu.navbar.navbar-nav.navbar-right'
+      div '#main-menu.nav.navbar-nav.navbar-left.main-menu'
+      div '#user-menu.navbar.navbar-nav.navbar-right.main-menu'
 
   ########################################
   PageLayoutTemplate = renderable (user) ->

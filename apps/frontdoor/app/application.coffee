@@ -42,6 +42,16 @@ define (require, exports, module) ->
     MSGBUS.events.on 'mainbar:show', (view) =>
       console.log 'mainbar:show called'
       app.mainbar.show view
+
+    MSGBUS.events.on 'rcontent:show', (view) =>
+      console.log 'rcontent:show called'
+      app.rcontent.show view
+      
+    MSGBUS.events.on 'main-menu:show', (view) =>
+      console.log 'main-menu:show called'
+
+    MSGBUS.events.on 'user-menu:show', (view) =>
+      console.log 'user-menu:show called'
       
   app = new Marionette.Application()
   app.current_user = new common_models.CurrentUser
